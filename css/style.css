@@ -27,7 +27,7 @@
     color: #fff;
 }
 
-.debug .col {
+.debug .col, .debug .col-2 {
     height: 400px;
 }
 
@@ -38,12 +38,25 @@
 
 /* Regole Generali */
 
+html {
+    font-family: sans-serif;
+}
+
 .flex {
     display: flex;
 }
 
 .none {
     display: none;
+}
+
+.btn {
+    padding: 7px 40px;
+    border-radius: 25px;
+}
+
+p {
+    line-height: 30px;
 }
 
 /* Header */
@@ -56,7 +69,7 @@ header {
 }
 
 header nav {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -82,26 +95,108 @@ nav li.none {
 /* Main */
 
 
-main .col {
-    width: 90%;
+main .col, main .col-2 {
     background-color: var(--secondary-color-light);
-    margin: auto;
     margin-bottom: 2rem;
+    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+}
+
+main .intro {
+    width: 80%;
+    margin: auto;
+}
+
+.intro .col h3, .intro .col-2 h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.intro .col p, .intro .col-2 p {
+    margin-bottom: 2rem;
+    color: rgb(101, 100, 100);
+    font-weight: bold ;
+}
+
+.intro .col-text a.btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro .col i {
+    color: var(--secondary-color);
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.intro .col  {
+    text-align: center;
 }
 
 main .planning {
     background-color: var(--primary-color);
+    padding: 2rem 0;
 }
 
 main .plan {
-    width: 90%;
-    margin: 1rem auto;
+    width: 80%;
+    margin: auto;
+}
+
+main .plan:first-child {
+    margin-bottom: 2rem;
 }
 
 main .p-white  {
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 40px;
 }
+
+.testimonials {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.testimonials h6, .testimonials h2 {
+    margin: 2rem 0;
+}
+
+.testimonials h2 {
+    color: var(--primary-color);
+}
+
+.testimonials p {
+    margin-bottom: 2rem;
+}
+
+.testimonials .col {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+}
+
+.benefits{
+    background-color: var(--primary-color);
+}
+
+.benefits-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.benefits h2 {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.benefits-container .col {
+    background-color: #fff;
+}
+
 
 /* Media Query */
 
@@ -111,18 +206,30 @@ main .p-white  {
         margin: 0 -0.5rem;
     }
     
-    .intro {
+    main .intro {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 1rem;
+        width: 80%;
     }
 
     .intro .col {
         width: calc((100% / 3) - 2rem);
+        margin: 1rem 1rem;
     }
 
-    .intro .col:first-child {
+    .intro .col-2 {
         width: calc((100% / 3) * 2 - 2rem);
+        margin: 1rem 1rem;
+    }
+
+    .benefits-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefits-container .col {
+        width: calc((100% / 2) - 2rem);
+        margin: 1rem;
     }
 }
 
@@ -136,8 +243,21 @@ main .p-white  {
     }
 
     header nav, main .intro {
-        width: 70%;
         margin: 0 auto;
     }
 
+    .plan-container {
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+
+    .plan-container .plan {
+        margin: 1rem;
+    }
+
+    .benefits-container .col {
+        width: calc((100% / 3) - 2rem);
+        margin: 1rem;
+    }
 }
