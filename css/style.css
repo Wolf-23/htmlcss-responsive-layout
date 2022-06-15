@@ -53,6 +53,7 @@ html {
 .btn {
     padding: 7px 40px;
     border-radius: 25px;
+    text-decoration: none;
 }
 
 p {
@@ -121,7 +122,6 @@ main .intro {
 .intro .col-text a.btn {
     background-color: var(--secondary-color);
     color: #fff;
-    text-decoration: none;
 }
 
 .intro .col i {
@@ -197,6 +197,26 @@ main .p-white  {
     background-color: #fff;
 }
 
+.benefits-container .col .num, .benefits-container .col h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benefits-container .col .num {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.benefits-container .col a {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.benefits-container .col p {
+    margin-bottom: 1rem;
+}
 
 /* Media Query */
 
