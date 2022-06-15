@@ -5,3 +5,139 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Regole di Root */
+
+:root {
+    --primary-color: #9792E4;
+    --primary-color-light: #C2C0EF;
+    --secondary-color: #0084FD;
+    --secondary-color-light: #B5DDFF;
+    --orange-text: #FDC15F;
+}
+
+/* Regole di Debug  */
+
+.debug header nav ul .left li:first-child a{
+    font-size: 30px;
+}
+
+.debug header nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.debug .col {
+    height: 400px;
+}
+
+.debug .planning .plan{
+    height: 350px;
+    border: 1px solid black;
+}
+
+/* Regole Generali */
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+/* Header */
+
+header {
+    height: 80px;
+    background-color: var(--secondary-color);
+    margin-bottom: 2rem;
+  
+}
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    list-style: none;
+    color: #fff;
+}
+
+nav li.none:nth-child(5) a{
+    background-color: #fff;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 25px;
+}
+
+nav li.none {
+    margin: 0 10px;
+}
+
+/* Main */
+
+
+main .col {
+    width: 90%;
+    background-color: var(--secondary-color-light);
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+main .planning {
+    background-color: var(--primary-color);
+}
+
+main .plan {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+main .p-white  {
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+
+    header nav .left, header nav .right {
+        margin: 0 -0.5rem;
+    }
+    
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+    }
+
+    .intro .col {
+        width: calc((100% / 3) - 2rem);
+    }
+
+    .intro .col:first-child {
+        width: calc((100% / 3) * 2 - 2rem);
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    nav li.none {
+        display: block;
+    }
+
+    nav li a i.fa-solid {
+        display: none;
+    }
+
+    header nav, main .intro {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
