@@ -40,6 +40,7 @@
 
 html {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 .flex {
@@ -60,13 +61,21 @@ p {
     line-height: 30px;
 }
 
+#planning, #testimonials, #benefits {
+    scroll-margin-top: 6rem;
+}
+
 /* Header */
 
 header {
     height: 80px;
     background-color: var(--secondary-color);
     margin-bottom: 2rem;
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 header nav {
@@ -95,6 +104,9 @@ nav li.none {
 
 /* Main */
 
+main {
+    margin-top: 7rem;
+}
 
 main .col, main .col-2 {
     background-color: var(--secondary-color-light);
@@ -126,7 +138,7 @@ main .intro {
 
 .intro .col i {
     color: var(--secondary-color);
-    font-size: 50px;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -225,17 +237,17 @@ main .p-white  {
     main .intro {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        /* width: calc(80% + 2rem); */
     }
 
     .intro .col {
         width: calc((100% / 3) - 2rem);
-        margin: 1rem 1rem;
+        margin: 0 1rem 2rem;
     }
 
     .intro .col-2 {
         width: calc((100% / 3) * 2 - 2rem);
-        margin: 1rem 1rem;
+        margin: 0 1rem 2rem;
     }
 
     .benefits-container {
