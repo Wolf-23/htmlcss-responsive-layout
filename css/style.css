@@ -31,7 +31,7 @@
     height: 400px;
 }
 
-.debug .planning .plan{
+.debug #planning .plan{
     height: 350px;
     border: 1px solid black;
 }
@@ -134,7 +134,7 @@ main .intro {
     text-align: center;
 }
 
-main .planning {
+main #planning {
     background-color: var(--primary-color);
     padding: 2rem 0;
 }
@@ -153,41 +153,40 @@ main .p-white  {
     border-radius: 40px;
 }
 
-.testimonials {
+#testimonials {
     text-align: center;
     width: 80%;
     margin: auto;
 }
 
-.testimonials h6, .testimonials h2 {
+#testimonials h6, #testimonials h2 {
     margin: 2rem 0;
 }
 
-.testimonials h2 {
+#testimonials h2 {
     color: var(--primary-color);
 }
 
-.testimonials p {
+#testimonials p {
     margin-bottom: 2rem;
 }
 
-.testimonials .col {
+#testimonials .col {
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 40px;
 }
 
-.benefits{
+#benefits{
     background-color: var(--primary-color);
 }
 
 .benefits-container {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 1rem;
 }
 
-.benefits h2 {
+#benefits h2 {
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -195,6 +194,7 @@ main .p-white  {
 
 .benefits-container .col {
     background-color: #fff;
+    padding-bottom: 2rem;
 }
 
 .benefits-container .col .num, .benefits-container .col h3 {
@@ -221,11 +221,7 @@ main .p-white  {
 /* Media Query */
 
 @media screen and (min-width: 768px) {
-
-    header nav .left, header nav .right {
-        margin: 0 -0.5rem;
-    }
-    
+ 
     main .intro {
         display: flex;
         flex-wrap: wrap;
