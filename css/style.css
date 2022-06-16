@@ -16,26 +16,6 @@
     --orange-text: #FDC15F;
 }
 
-/* Regole di Debug  */
-
-.debug header nav ul .left li:first-child a{
-    font-size: 30px;
-}
-
-.debug header nav ul a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.debug .col, .debug .col-2 {
-    height: 400px;
-}
-
-.debug #planning .plan{
-    height: 350px;
-    border: 1px solid black;
-}
-
 /* Regole Generali */
 
 html {
@@ -79,7 +59,7 @@ header {
 }
 
 header nav {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -99,7 +79,16 @@ nav li.none:nth-child(5) a{
 }
 
 nav li.none {
-    margin: 0 10px;
+    margin-left: 10px;
+}
+
+header nav ul .left li:first-child a{
+    font-size: 30px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Main */
@@ -116,7 +105,7 @@ main .col, main .col-2 {
 }
 
 main .intro {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -146,28 +135,59 @@ main .intro {
     text-align: center;
 }
 
+.intro .col-img img{
+    width: 80%;
+    margin: 2rem auto 0;
+    display: block;
+}
+
 main #planning {
     background-color: var(--primary-color);
     padding: 2rem 0;
+    margin-top: 3rem;
 }
 
-main .plan {
-    width: 80%;
+#planning .plan {
+    width: 90%;
     margin: auto;
+    color: #fff;
+}
+
+#planning .plan img {
+    width: 100%;
+}
+
+#planning .plan h2 {
+    margin: 2rem 0;
 }
 
 main .plan:first-child {
     margin-bottom: 2rem;
 }
 
-main .p-white  {
+main #planning .p-white  {
     background-color: #fff;
     border-radius: 40px;
+    color: #000;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#planning .p-white h3 {
+    margin: 1rem 0;
+}
+
+#planning .p-white i {
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 #testimonials {
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -184,9 +204,25 @@ main .p-white  {
 }
 
 #testimonials .col {
-    width: 100%;
     background-color: var(--primary-color);
     border-radius: 40px;
+    padding: 2rem;
+}
+
+#testimonials .img-box img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+#testimonials .img-box p {
+    margin: 3rem 0;
+    color: #fff;
+}
+
+#testimonials .img-box h4 {
+    color: #fff;
 }
 
 #benefits{
@@ -194,14 +230,18 @@ main .p-white  {
 }
 
 .benefits-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 #benefits h2 {
     color: #fff;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    font-size: 2rem;
+    width: 90%;
+    margin: auto;
 }
 
 .benefits-container .col {
@@ -227,8 +267,119 @@ main .p-white  {
 }
 
 .benefits-container .col p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
+
+.about-us {
+    width: 90%;
+    margin: auto;
+}
+
+.about-us h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.about-us img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about-us p {
+    margin: 2rem 0;
+}
+
+.img-box-about {
+    position: relative;
+}
+
+.img-box-about span {
+    position: absolute;
+    font-size: 8rem;
+    color: var(--primary-color);
+    top: 0;
+    left: 40%;
+}
+
+.img-box-about p {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.img-box-about a {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.img-box-about i {
+    margin-right: 5px;
+}
+
+/* Footer */
+
+.footer-top {
+    background-color: var(--primary-color);
+    margin-top: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer-top h4 {
+    color: var(--primary-color-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.footer-top h2 {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.footer-top h1 {
+    color: var(--orange-text);
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.footer-top p {
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.footer-top a.btn {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.footer-top .copyright {
+    margin: 2rem 0;
+    color: #fff;
+}
+
+.footer-top .copyright a{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.footer-bottom {
+    background-color: #333333;
+    color: #fff;
+    padding: 0 3rem ;
+    text-align: center;
+}
+
+.footer-bottom p {
+    padding: 2rem 0;
+}
+
+.footer-bottom a {
+    color: var(--primary-color);
+}
+
 
 /* Media Query */
 
@@ -237,17 +388,26 @@ main .p-white  {
     main .intro {
         display: flex;
         flex-wrap: wrap;
-        /* width: calc(80% + 2rem); */
+        width: calc(90% + 2rem);
     }
 
     .intro .col {
-        width: calc((100% / 3) - 2rem);
-        margin: 0 1rem 2rem;
+        width: calc((100% / 3) - 1rem);
+        margin: 0 0.5rem 1rem;
     }
 
     .intro .col-2 {
-        width: calc((100% / 3) * 2 - 2rem);
-        margin: 0 1rem 2rem;
+        width: calc((100% / 3) * 2 - 1rem);
+        margin: 0 0.5rem 1rem;
+    }
+
+    .intro .col-img img {
+        width: 60%;
+        margin: 2rem 0 0 0;
+    }
+
+    #planning h2, #testimonials h2 {
+        font-size: 3rem;
     }
 
     .benefits-container {
@@ -258,6 +418,37 @@ main .p-white  {
     .benefits-container .col {
         width: calc((100% / 2) - 2rem);
         margin: 1rem;
+    }
+
+    #testimonials .img-box {
+        display: flex;
+    }
+    
+    .about-us {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .about-us .text-about, .about-us .img-box-about {
+        width: 50%;
+    }
+
+    .about-us .img-box-about {
+        padding-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .about-us .img-box img {
+        width: 25%;
+    }
+
+    .footer-top {
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 50%;
+        margin: auto;
     }
 }
 
@@ -274,10 +465,24 @@ main .p-white  {
         margin: 0 auto;
     }
 
+    .intro .col-2 {
+        display: flex;
+    }
+
+    .intro .col-img {
+        display: flex;
+        align-items: flex-end;
+    }
+
     .plan-container {
         display: flex;
         margin: auto;
         width: 80%;
+    }
+
+    #planning .plan-container .p-white {
+       margin-top: 300px;
+       margin-left: 1rem;
     }
 
     .plan-container .plan {
