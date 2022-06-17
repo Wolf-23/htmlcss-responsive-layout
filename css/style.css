@@ -181,8 +181,11 @@ main #planning .p-white  {
 #planning .p-white i {
     margin-top: 3rem;
     background-color: var(--primary-color);
-    padding: 1rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    display: inline-block;
+    line-height: 50px;
 }
 
 #testimonials {
